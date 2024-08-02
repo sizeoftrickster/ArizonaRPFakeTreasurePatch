@@ -7,7 +7,6 @@ SetMaterialHook::SetMaterialHook() {
 	switch ( version ) {
 		// R3
 		case ( SAMP::Version::R3 ): {
-			printf("R3");
 			CObject__SetMaterialAddress = sampHandle + 0xA7CA0;
 			break;
 		}
