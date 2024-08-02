@@ -1,5 +1,6 @@
 <p align="center"> Убирает "фейк клады" на любых рендерах, осталвяя только оригинальные </p>
-
+<p align="left"> Установка: переместить !FakeTreasurePatch.asi в корень игры </p>
+<p align="left"> Поддерживаемые версии: R3 </p>
 <p align="center"> Без плагина </p>
 
 ![image](https://github.com/user-attachments/assets/84d32e9d-e568-4a9d-99d5-77a0a605208a)
