@@ -5,7 +5,7 @@
 #include <kthook/kthook.hpp>
 #include <vector>
 
-#include "samp/0.3.7-R3-1/CObject.h"
+#include "samp/CObject.h"
 
 using COBject__SetMaterial__Prototype = void( __thiscall* )( SAMP::CObject*, int, int, const char*, const char*, unsigned long );
 

@@ -5,6 +5,11 @@ SetMaterialHook::SetMaterialHook() {
 	auto sampHandle = SAMP::GetHandle();
 	auto version = SAMP::GetVersion();
 	switch ( version ) {
+		// R1
+		case ( SAMP::Version::R1 ): {
+			CObject__SetMaterialAddress = sampHandle + 0xA2ED0;
+			break;
+		}
 		// R3
 		case ( SAMP::Version::R3 ): {
 			CObject__SetMaterialAddress = sampHandle + 0xA7CA0;
@@ -31,7 +36,8 @@ void SetMaterialHook::CObject__SetMaterialHooked( const decltype( COBject_SetMat
 
 	for ( int i : objectsId ) {
 		if ( myObj->m_nModel == i && nModel == NULL ) {
-			myObj->m_nModel = 1234;
+			// Telegram -> fazenda1486
+			myObj->m_nModel = 1486;
 			myObj->Remove();
 			myObj->DeleteRwObject();
 		}

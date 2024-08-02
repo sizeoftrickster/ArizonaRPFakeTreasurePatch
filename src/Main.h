@@ -3,7 +3,7 @@
 
 #include <Windows.h>
 #include <memory>
-#include <kthook/kthook.hpp>
+#include "kthook/kthook.hpp"
 
 using CTimer__Update_Prototype = void( __cdecl* )();
 
