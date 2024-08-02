@@ -5,11 +5,6 @@ SetMaterialHook::SetMaterialHook() {
 	auto sampHandle = SAMP::GetHandle();
 	auto version = SAMP::GetVersion();
 	switch ( version ) {
-		// R1
-		case ( SAMP::Version::R1 ): {
-			CObject__SetMaterialAddress = sampHandle + 0xA2ED0;
-			break;
-		}
 		// R3
 		case ( SAMP::Version::R3 ): {
 			printf("R3");
